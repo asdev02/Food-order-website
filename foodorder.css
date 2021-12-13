@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Roboto:wght@300&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-container{
+  padding: 10px;
+}
+h1{
+  text-align: center;
+  padding: 20px;
+  color: #4895ef;
+  font-size: 50px;
+  font-family: 'Mochiy Pop One', sans-serif;
+  text-shadow: 2px 2px 8px #90e0ef;
+}
+nav{
+  background-color: #90e0ef;
+  display: grid;
+  place-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+nav ul{
+  list-style-type: none;
+}
+nav ul a{
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+  color: #005f73;
+  transition: 0.2s ease-in;
+  font-size: 18px;
+}
+nav ul a:hover{
+  background-color: #4895ef;
+  color: white;
+}
+.items{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px 20px;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+.item{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 2px;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+}
+.item img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  cursor:pointer;
+  transition: 0.2s ease;
+  border-radius: 6px;
+}
+.item img:hover{
+  transform: scale(1.04);
+}
+.item h4{
+  padding: 5px;
+  text-align: center;
+}
+.item button{
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  background-color: #0077b6;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.2s all;
+}
+.items button:hover{
+  transform: scale(1.08);
+}
+
+@media screen and (max-width: 1000px){
+  .items{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px){
+  .items{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

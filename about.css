@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+  padding: 20px;
+  color: #4895ef;
+  font-size: 50px;
+  font-family: 'Mochiy Pop One', sans-serif;
+  text-shadow: 2px 2px 8px #90e0ef;
+}
+nav{
+  background-color: #90e0ef;
+  display: grid;
+  place-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+nav ul{
+  list-style-type: none;
+}
+nav ul a{
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+  color: #005f73;
+  transition: 0.2s ease-in;
+  font-size: 18px;
+}
+nav ul a:hover{
+  background-color: #4895ef;
+  color: white;
+}
+.row {
+  display: flex;
+  align-items: center;
+  font-color: #414833;
+  flex-wrap: wrap;
+  font-size: 25px;
+  justify-content: space-around;
+  font-family: 'Lato', sans-serif;
+}
+.row p {
+  color: #f94144;
+}
+
+
+.slider {
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+}
+
+.slide {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 300%;
+	overflow: hidden;
+	animation: slider 12s infinite;
+}
+
+.slide div {
+	width: 33.33%;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.bold {
+	margin-bottom: 10px;
+	font-weight: 200px;
+	font-size: 50px;
+  font-family: 'Dongle', sans-serif;
+}
+
+.italic {
+	font-size: 40px;
+	text-align: center;
+  color: #f94144;
+  font-family: 'Dongle', sans-serif;
+}
+
+.slide-1 {
+	/*float: clear-float;*/
+	background-color:  #343a40;
+}
+
+.slide-2 {
+	background-color: #343a40;
+}
+
+.slide-3 {
+	width: 100%;
+	background-color: #343a40;
+}
+
+@keyframes slider {
+	0% {
+		margin-left: 0;
+	}
+
+	30% {
+		margin-left: 0;
+	}
+
+	33% {
+		margin-left: -100%;
+	}
+
+	63% {
+		margin-left: -100%;
+	}
+
+	66% {
+		margin-left: -200%;
+	}
+
+	96% {
+		margin-left: -200%;
+	}
+
+	100% {
+		margin-left: 0;
+	}
+}
